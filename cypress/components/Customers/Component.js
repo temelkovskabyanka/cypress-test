@@ -1,7 +1,8 @@
 export default class Component {
-    get logInButton(){
+    get logInButton() {
         return cy.get(".btn.btn-primary.btn-block")
     }
+
     get newCustomerButton() {
         return cy.get("#new-person-btn");
     }
@@ -21,19 +22,29 @@ export default class Component {
     get phoneNumber() {
         return cy.get("#phone_number");
     }
-    get saveButton(){
+
+    get saveButton() {
         return cy.get("#submitf");
     }
-    get customerField(){
-        return cy.get(".icon.ti-user")
+
+    get homeButton() {
+        return cy.get(".home");
     }
-    get searchCustomerField(){
-        return cy.get("#search");
+
+    get customerField() {
+        return cy.get(".customers");
     }
-    get customerTableName(){
+
+    get searchCustomerField() {
+        return cy.get('#search');
+    }
+
+    get customerTableName() {
         return cy.get("tbody > tr > :nth-child(4)");
     }
-    get customerTableEmail(){
+
+    get customerTableEmail() {
         return cy.get("tbody > tr > :nth-child(5)");
     }
+
 }

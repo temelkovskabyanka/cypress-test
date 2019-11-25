@@ -20,10 +20,13 @@ describe("Customer Test", () => {
         customerComponent.email.type(customerData.email);
         customerComponent.phoneNumber.type(customerData.phoneNumber);
         customerComponent.saveButton.click();
+        customerComponent.homeButton.click();
         customerComponent.customerField.click();
         customerComponent.searchCustomerField.type(customerData.searchCustomerField + "{enter}");
         customerComponent.customerTableName.should("have.text", "Zoey Chakovska");
         customerComponent.customerTableEmail.should("have.text", "zoey@gmail.com");
     });
 });
+
+
 
